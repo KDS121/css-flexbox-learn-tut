@@ -1,0 +1,90 @@
+*{
+    font-family: verdana;
+    margin: 0;
+}
+
+body{
+    background: #eee;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.flex-container{
+    display: flex;
+    background: #fff;
+    flex-wrap: wrap;
+    /* flex-wrap: wrap-reverse; */
+    /* flex-wrap: nowrap; */
+    /* flex-flow: column; */
+    /* when flex-flow is column flex-basis controls controls individual height of the element not the width */
+    flex-flow: row;
+    /* flex-flow: column; */
+    /* flex-flow: column-reverse; */
+    /* flex-flow: row-reverse; */
+    /* justify-content is always applied to the main axis, elements in flex always follow main axis not the cross axis */
+    /* justify-content: center; */
+    /* justify-content: flex-end; */
+    /* justify-content: flex-start; */
+    /* justify-content: center; */
+    /* height: 880px; */
+    height: 600px;
+    /* align-items is always applied to the cross-axis*/
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 100px;
+    /* min-width: 100px; */
+    /* flex-grow: 1; */
+    /* width: 320px; */
+    /* min-width: 200px; */
+    /* flex-grow: 1; */
+    /* flex-basis: 200px;    */
+    /* flex basis is similar to min width for each flex items */
+    /* flex: 1 0 100px;   */
+    flex: 0 0 100px;
+    /* flex: flex-grow flex-shrink flex-basis */
+
+    /* flex:1;  */ /*flex:1 means that it sets flex grow to 1 flex shrink to 1 and flex basis to 0*/
+
+}
+.one{
+    background: red;
+    /* flex-grow: 2; */
+    /* flex-shrink: 1; */
+    /* flex-basis: 100px; */
+}
+.two{
+    background: blue;
+    /* flex-grow: 3; */
+    /* flex-shrink: 2; */
+    /* flex-basis: 200px; */
+}
+.three{
+    background: green;
+    /* flex-grow: 1; */
+    /* flex-shrink: 3; */
+    /* flex-basis: 300px; */
+}
+
+/*
+
+
+.one{
+    order: 0; //default value
+    //the lowest no. comes first and the highest no. comes last
+}
+.two{
+    order:2;
+}
+.three{
+ order:-1; //it can take negative values also as a lowest number
+}
+
+
+
+*/
